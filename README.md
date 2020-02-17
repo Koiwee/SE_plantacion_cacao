@@ -6,10 +6,16 @@ Esta práctica se centra en el desarrollo de un sistema que, en base a ciertas v
 
 Las variables que se tienen contempladas para este sistema son:
 
-Tipo de tierra.
-pH de la tierra.
-Temperatura de la zona.
-Altitud de la zona.
-Precipitación anual.
-Porcentaje de humedad del suelo.
-Porcentaje de sombra.
+•	Tipo de tierra.
+
+•	pH de la tierra.
+
+•	Temperatura de la zona.
+
+•	Altitud de la zona.
+
+•	Precipitación anual.
+
+•	Porcentaje de humedad del suelo.
+
+•	Porcentaje de sombra.
