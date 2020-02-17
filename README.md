@@ -1,5 +1,4 @@
-# SE_plantacion_cacao
-Sistema Experto sencillo para el establecimiento de plantaciones de cacao más productivas. 
+# Sistema Experto sencillo para el establecimiento de plantaciones de cacao más productivas. 
 
 Área: Agricultura
 Cultivo: Cacao
