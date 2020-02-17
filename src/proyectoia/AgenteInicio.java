@@ -80,105 +80,15 @@ public class AgenteInicio extends Agent{
                 System.exit(0);
             }
         });
-        //Interfaz
-        /*JTextField jTextField1 = new javax.swing.JTextField();
-
-        jTextField1.setBackground(new java.awt.Color(240, 240, 240));
-
-        jTextField1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-
-        jTextField1.setText("Porcentaje de éxito:");
-        
-        JTextField Resultado = new javax.swing.JTextField();
-
-        Resultado.setBackground(new java.awt.Color(240, 240, 240));
-
-        Resultado.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-
-        Resultado.setToolTipText("");
-
-        Resultado.setName("Resultado"); // NOI18N
-        Resultado.setBounds(470, 340, 80, 50);
-
-
-
-
-
-
-        //
-        */
+       
         JPanel p = new JPanel();
         JPanel p1 = new JPanel();
         JPanel fondo = new JPanel();
         JPanel fondo1 = new JPanel();
         JPanel fondo2 = new JPanel();
-         fondo.setSize(600,400);
-          fondo1.setSize(600,400);
-           fondo2.setSize(600,400);
-       /*etiq_tierra = new JLabel("Tipo de tierra:");
-        text_tierra = new JComboBox(tipos_tierra);
-        etiq_ph = new JLabel("pH:");
-        text_ph = new TextField(10);
-        etiq_temp = new JLabel("Temperatura (°C)");
-        text_temp = new TextField(10);
-        etiq_humedad = new JLabel("Humedad (%):");
-        text_humedad = new TextField(10);
-        etiq_altitud = new JLabel("Altitud (msnm):");
-        text_altitud = new TextField(10);
-        etiq_precip = new JLabel("Precipitación (mm anuales:)");
-        text_precip = new TextField(10);
-        etiq_sombra = new JLabel("Sombra (%):");
-        text_sombra = new TextField(10);
-        
-        p.setLayout(new GridLayout(9,1));
-        //p.setLayout(new FlowLayout());
-        p.add(etiq_tierra);
-        p.add(text_tierra);
-        p.add(etiq_ph);
-        p.add(text_ph);
-        p.add(etiq_temp);
-        p.add(text_temp);
-        p.add(etiq_humedad);
-        p.add(text_humedad);
-        p.add(etiq_altitud);
-        p.add(text_altitud);
-        p.add(etiq_precip);
-        p.add(text_precip);
-        p.add(etiq_sombra);
-        p.add(text_sombra);
-        
-        p1.setLayout(new BorderLayout());
-        p1.add(p, BorderLayout.NORTH);
-        btnEnviar = new Button("Enviar");
-        p.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 340, 130, 50));
-        p.add(Resultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 340, 80, 50));
-
-        p1.add(btnEnviar, BorderLayout.SOUTH);
-        fondo.setLayout(new GridLayout());
-        fondo.add(imagenfondo);
-        fondo.add(fondo1);
-        fondo1.add(p1);
-        frm.add(fondo,BorderLayout.SOUTH);
-        
-        
-        */
-        //Agrego Acciones a los botones
-        //btnEnviar.addActionListener(new tranfiere());
-        
-       /*
-        frm.setLayout(null);
-        fondo.setLayout(null);
-        fondo1.setLayout(null);
-        fondo2.setLayout(null);
-        frm.add(fondo);
-        fondo.add(imagenfondo);
-        fondo.add(fondo1);
-        fondo1.setLayout(new GridLayout(9,1));
-        fondo1.add(lbl1);
-        imagenfondo.setBounds(0,100,400,200);
-        lbl1.setBounds(0,100,400,200);
-        frm.setVisible(true);
-        */
+        fondo.setSize(600,400);
+        fondo1.setSize(600,400);
+        fondo2.setSize(600,400);
        
         formulario form=new formulario();
         
@@ -285,18 +195,6 @@ public class AgenteInicio extends Agent{
                         
                     }
                     
-                    /*
-                    if( contenidoA1 != null ){
-                        if(contenidoA1.contains("inutil")){
-                            System.out.println(contenidoA1);
-                            contenidoA1="";
-                        } else if( !contenidoA1.equals("") ){
-                            sumaA1 = Double.parseDouble(contenidoA1);
-                            contenidoA1="";
-                        }                        
-                        compatibilidad = sumaA1 * 100 / variables;
-                    }*/
-                    
                     ACLMessage mensajeA2 = receive(mt2);
                     if (mensajeA2 != null){
                         contenidoA2 = mensajeA2.getContent();
@@ -395,12 +293,12 @@ public class AgenteInicio extends Agent{
                 send(mensajeA22);
                 send(mensajeA23);
 
-                /*formulario.text_ph.setText("");
+                formulario.text_ph.setText("");
                 formulario.text_humedad.setText("");
                 formulario.text_temp.setText("");
                 formulario.text_altitud.setText("");
                 formulario.text_precip.setText("");
-                formulario.text_sombra.setText("");*/
+                formulario.text_sombra.setText("");
                 recibido = 0;
             }
         });
